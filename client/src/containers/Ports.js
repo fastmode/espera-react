@@ -4,7 +4,7 @@ const Ports = (props) => (
   <div>
     <h1>ESPERA | Ports</h1>
     {props.ports.map(port => 
-      <div className="PortCard">
+      <div key={port.id} className="PortCard">
         <h3>{port.port_name}</h3>
         <p>{port.border}</p>
         <p>Crossing Name: {port.crossing_name}</p>
