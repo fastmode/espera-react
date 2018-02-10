@@ -9,6 +9,16 @@ class Api::PortsController < ApplicationController
     render json: @port.statuses.last
   end
 
+  def canada
+    @canada = Port.all.canada
+    render json: @canada
+  end
+
+  def mexico
+    @mexico = Port.all.mexico
+    render json: @mexico
+  end
+
 
   private
 
