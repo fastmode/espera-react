@@ -12,7 +12,12 @@ class Ports extends Component {
 
   addPort = (port) => {
     const newPorts = this.state.favoritePorts.concat(port);
-    this.setState({ favoritePorts: newPorts})
+    this.setState({ favoritePorts: newPorts});
+  }
+
+  removePortItem = (portIndex) => {
+    const filteredPorts = this.state.favoritePorts.filter((port, index) => portIndex !== index);
+    this.setState({ favoritePorts: filteredPorts });
   }
 
   componentDidMount() {
@@ -33,10 +38,12 @@ class Ports extends Component {
         <div>
           <h1>Favorite Ports</h1>
           <div className="container">
-            {favoritePorts.map(port =>
+            {favoritePorts.map((port, index) =>
             <FavoritePorts 
               port={port}
-              onPortClick={"hola"}
+              index={index}
+              key={port.id}
+              onPortClick={this.removePortItem}
             />
             )}
 
