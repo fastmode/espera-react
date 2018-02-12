@@ -23,7 +23,7 @@ class Ports extends Component {
   componentDidMount() {
     this.props.getPorts()
   }
-
+  
   render() {
 
     const canada = this.props.ports.filter(port => port.border === "Canadian Border");

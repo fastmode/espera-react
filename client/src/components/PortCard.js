@@ -6,7 +6,7 @@ const PortCard = ({ port, onPortClick }) => (
     <p>
       {port.crossing_name} <br />
       Hours: {port.hours} <br />
-      <i class="fa fa-heart-o" onClick={() => onPortClick(port)}></i>
+      <i className="fa fa-heart-o" onClick={() => onPortClick(port)}></i>
     </p>
   </div>
 )

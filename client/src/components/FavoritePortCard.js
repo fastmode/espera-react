@@ -8,7 +8,7 @@ const FavoritePortCard = ({ port, onPortClick, index }) => (
     <p>
       {port.crossing_name} <br />
       Hours: {port.hours} <br />
-      <i class="fa fa-heart" onClick={() => onPortClick(index)}></i>
+      <i className="fa fa-heart" onClick={() => onPortClick(index)}></i>
     </p>
   </div>
 )
