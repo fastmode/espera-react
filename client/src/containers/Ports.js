@@ -36,7 +36,7 @@ class Ports extends Component {
     return (
       <div>
         <div>
-          <h1>Favorite Ports</h1>
+          <h2>Favorite Ports</h2>
           <div className="container">
             {favoritePorts.map((port, index) =>
             <FavoritePorts 
@@ -46,11 +46,11 @@ class Ports extends Component {
               onPortClick={this.removePortItem}
             />
             )}
-
           </div>
         </div>
+
         <div>
-          <h1>Canadian Ports</h1>
+          <h2>Canadian Ports</h2>
           <div className="container">
             {canada.map(port => 
               <PortCard 
@@ -61,8 +61,9 @@ class Ports extends Component {
             )}
           </div>
         </div>
+        
         <div>
-          <h1>Mexican Ports</h1>
+          <h2>Mexican Ports</h2>
           <div className="container">
             {mexico.map(port =>
               <PortCard
