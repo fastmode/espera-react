@@ -34,7 +34,7 @@ class Ports extends Component {
     console.log(this.state.favoritePorts);
 
     return (
-      <div>
+      <div className="App">
         <div>
           <h2>Favorite Ports</h2>
           <div className="container">
@@ -86,23 +86,3 @@ const mapStateToProps = (state) => {
 }
 
 export default connect(mapStateToProps, { getPorts })(Ports);
-
-
-
-// To filter only Canada Ports
-// {
-//   const canada = this.props.ports.filter(port => port.border === "Canadian Border");
-//   canada.map(c => 
-//     <PortCard 
-//       key={c.id}
-//       port={c}
-// )}
-
-
-// {
-//   this.props.ports.map(port => 
-//   <PortCard 
-//     key={port.id} 
-//     port={ port } />
-//   )
-// }

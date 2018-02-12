@@ -1,9 +1,11 @@
 import React from 'react';
+import Nav from './Nav';
 import Ports from '../containers/Ports';
 import './App.css';
 
 const App = () => (
-  <div className="App">
+  <div>
+    <Nav />
     <Ports />
   </div>
 )

@@ -1,10 +1,45 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #666666;
+  font-size: 14px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+img {
+  width: 100%;
+}
+
+h1 {
+  margin:0;
+  text-transform: uppercase;
+}
+
+.header {
+  background-color: #252525;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.header-content{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header-logo{
+display: inline-block;
+width: 112px;
+margin: 5px 20px 5px 0;
+}
+
+.header-sub {
+display: inline-block;
+font-weight: 300;
+color: #dddddd;
+}
+
+.App {
+  text-align: center;
 }
 
 .App-header {
