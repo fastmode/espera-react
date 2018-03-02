@@ -16,9 +16,9 @@ const setPorts = ports => {
   }
 }
 
-const addFavoritePort = port => {
-  return {
-    type: 'ADD_FAVORITE_PORT',
-    favoritePorts
-  }
-}
+// const addFavoritePort = port => {
+//   return {
+//     type: 'ADD_FAVORITE_PORT',
+//     favoritePorts
+//   }
+// }

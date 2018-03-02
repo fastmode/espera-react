@@ -10,6 +10,8 @@ class Ports extends Component {
     favoritePorts: [], 
   }
 
+  
+
   addPort = (port) => {
     const newPorts = this.state.favoritePorts.concat(port);
     this.setState({ favoritePorts: newPorts});
@@ -25,9 +27,10 @@ class Ports extends Component {
   }
   
   render() {
+    const { ports, getPorts } = this.props;
 
-    const canada = this.props.ports.filter(port => port.border === "Canadian Border");
-    const mexico = this.props.ports.filter(port => port.border === "Mexican Border");
+    const canada = ports.filter(port => port.border === "Canadian Border");
+    const mexico = ports.filter(port => port.border === "Mexican Border");
     const favoritePorts = this.state.favoritePorts;
 
     console.log("favoritePorts:")
