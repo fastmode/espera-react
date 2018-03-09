@@ -2,15 +2,13 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import FavoritePorts from './FavoritePorts';
 import PortCard from '../components/PortCard';
-import { getPorts } from '../actions/ports';
+import { getPorts, setFavoritePort } from '../actions/ports';
 
 class Ports extends Component {
 
   state = {
     favoritePorts: [], 
   }
-
-  
 
   addPort = (port) => {
     const newPorts = this.state.favoritePorts.concat(port);
@@ -27,7 +25,7 @@ class Ports extends Component {
   }
   
   render() {
-    const { ports, getPorts } = this.props;
+    const { ports } = this.props;
 
     const canada = ports.filter(port => port.border === "Canadian Border");
     const mexico = ports.filter(port => port.border === "Mexican Border");
