@@ -7,13 +7,13 @@ class FavoritePorts extends Component {
   
   render() {
 
-    const { index, port, onPortClick } = this.props
+    const { index, port, onHeartClick } = this.props
     return (
       <div key={port.id} >
         <FavoritePortCard 
           index={index}
           port={port}
-          onPortClick={onPortClick}
+          onHeartClick={onHeartClick}
         />
       </div>
     )

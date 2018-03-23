@@ -44,7 +44,7 @@ class Ports extends Component {
               port={port}
               index={index}
               key={port.id}
-              onPortClick={this.removePortItem}
+              onHeartClick={this.removePortItem}
             />
             )}
           </div>
@@ -57,7 +57,7 @@ class Ports extends Component {
               <PortCard 
                 key={port.id} 
                 port={ port } 
-                onPortClick={this.addPort} 
+                onHeartClick={this.addPort} 
               />
             )}
           </div>
@@ -70,7 +70,7 @@ class Ports extends Component {
               <PortCard
                 key={port.id}
                 port={ port } 
-                onPortClick={this.addPort} 
+                onHeartClick={this.addPort} 
               />
             )}
           </div>
