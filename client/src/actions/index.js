@@ -16,8 +16,6 @@ const setPorts = ports => {
   }
 }
 
-
-
 export const setFavoritePort = (port) => {
   return dispatch => {
     dispatch(addFavoritePort(port))

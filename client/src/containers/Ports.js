@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import FavoritePorts from './FavoritePorts';
 import PortCard from '../components/PortCard';
-import { getPorts, setFavoritePort } from '../actions/ports';
+import * as actions from '../actions/index';
 
 class Ports extends Component {
 
@@ -21,6 +21,7 @@ class Ports extends Component {
   }
 
   componentDidMount() {
+    console.log(this.props)
     this.props.getPorts()
   }
   
@@ -86,4 +87,4 @@ const mapStateToProps = (state) => {
   })
 }
 
-export default connect(mapStateToProps, { getPorts })(Ports);
+export default connect(mapStateToProps, actions)(Ports);
