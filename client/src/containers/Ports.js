@@ -21,19 +21,21 @@ class Ports extends Component {
   }
 
   componentDidMount() {
-    console.log(this.props)
+    // console.log(this.props)
     this.props.getPorts()
   }
   
   render() {
     const { ports } = this.props;
 
+    // console.log(this.props);
+
     const canada = ports.filter(port => port.border === "Canadian Border");
     const mexico = ports.filter(port => port.border === "Mexican Border");
     const favoritePorts = this.state.favoritePorts;
 
-    console.log("favoritePorts:")
-    console.log(this.state.favoritePorts);
+    // console.log("favoritePorts:")
+    // console.log(this.state.favoritePorts);
 
     return (
       <div className="App">
